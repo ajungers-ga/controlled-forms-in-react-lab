@@ -1,42 +1,97 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src/App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3c8f9;
+  color: #390c3d;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #8136c9; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.bookshelfDiv {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDiv {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.formDiv h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5e3a9c;
 }
 
-.card {
-  padding: 2em;
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4d156f;
 }
 
-.read-the-docs {
-  color: #888;
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #cfa2e7;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border-color: #a96cd9;
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #7d3cff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a2fbd;
+}
+
+
+.bookCardsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.bookCard {
+  background-color: #e6b2ff; 
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.bookCard h4 {
+  font-size: 20px;
+  color: #5b1899;
+  margin-bottom: 12px;
+}
+
+.bookCard p {
+  color: #443455;
+  font-style: italic;
 }
